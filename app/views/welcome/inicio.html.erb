@@ -1,0 +1,27 @@
+<div id="main">
+    <header id="header">
+        <h1>Inicio</h1>
+        <p>Cuando paso de una vista a otra a traves de los link de los iconos, no se carga la imagen grande, hay que refrescar para que aparezca</p>
+        <ul class="icons">
+            <li><a href="/" ><i class="fa fa-home fa-lg"></i></a></li>
+            <li><a href="welcome/main" ><i class="fa fa-camera-retro fa-lg"></i></a></li>
+            <br>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+            <li><a href="#" class="fa fa-github"></a></li>
+            <li><a href="#" class="fa fa-envelope"></a></li>
+        </ul>
+    </header>
+    <section id="thumbnails">
+        <article>
+            <a class="thumbnail" href="<%= image_path('foto.jpg') %>"> <%= image_tag("foto.jpg", alt: "...") %></a>
+            <h2>Diam tempus accumsan</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+            <a class="thumbnail" href="<%= image_path('fotografo.jpg') %>"><img src="<%= image_path('fotografo.jpg') %>"></a>
+            <h2>Vivamus convallis libero</h2>
+            <p>Sed velit lacus, laoreet at venenatis convallis in lorem tincidunt.</p>
+        </article>
+    </section>
+</div>
